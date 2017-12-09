@@ -1,0 +1,12 @@
+<?php
+
+$a = '1';
+$b = &$a;
+$b = "2$b";
+echo $a.", ".$b;
+
+?>
+
+//The output of above program will be 21, 21
+
+//We are storing address of a in variable b so change to variable b applies to a as well, so  $b = "2$b" means $b=21 and same goes to a as well.
